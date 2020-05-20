@@ -1,0 +1,32 @@
+server:
+  port: 8080
+#  context-path: /api
+logging:
+  level:
+    root: info
+    com.lrm: debug
+  file: logs/debug.log
+  
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=wd;
+    username: sa
+    password: Pass@w0rd
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create
+    
+
+
+
+
+
+
+
+
+
+
+
